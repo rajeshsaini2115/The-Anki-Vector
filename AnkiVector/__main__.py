@@ -88,6 +88,12 @@ buttons = [
         ),
     ],
     [
+        InlineKeyboardButton(text="Free internet ", url="http://t.me/szrosebot?start=help"),
+        InlineKeyboardButton(
+            text="Film ", url="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"
+        ),
+    ],
+    [
         InlineKeyboardButton(text="🎙Add vc play to your group ➕", url="t.me/yakari_music_play_newversion_bot?startgroup=true"),
     ],
 ]
