@@ -89,12 +89,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-             "Go Inline", switch_inline_query_current_chat=""
+             "🤫 Free internet file", switch_inline_query_current_chat=""
         )
     ],
     [
         InlineKeyboardButton(
-             "Go Inline", switch_inline_query_current_chat=""
+             "🎬Film searies ", switch_inline_query_current_chat=""
         )
     ],
     [
