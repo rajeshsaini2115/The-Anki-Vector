@@ -88,10 +88,14 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Free internet ", switch_inline_query_current_chat="""),
         InlineKeyboardButton(
-            text="Film ", switch_inline_query_current_chat="""
-        ),
+             "Go Inline", switch_inline_query_current_chat=""
+        )
+    ],
+    [
+        InlineKeyboardButton(
+             "Go Inline", switch_inline_query_current_chat=""
+        )
     ],
     [
         InlineKeyboardButton(text="🎙Add vc play to your group ➕", url="t.me/yakari_music_play_newversion_bot?startgroup=true"),
