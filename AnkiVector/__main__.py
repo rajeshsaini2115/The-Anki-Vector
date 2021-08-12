@@ -101,7 +101,7 @@ buttons = [
 ROSEBOT_STICKER = "CAACAgUAAxkBAALLL2EUjvv53FTlrJ2NeS2FHL_sfvPMAAIRAwACHUmhVNYuprqSm_zGIAQ"
 
 HELP_STRINGS = f"""
-*Rose Help Menu :* [🤖](https://telegra.ph/file/14e7d126eb01b0e49dc93.jpg)
+*Rose Help Menu* [🤖](https://telegra.ph/file/14e7d126eb01b0e49dc93.jpg)
 I'm Rose bot 🇱🇰
 The following functions will helpful to you to manage your group🙂
 """.format(
@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_user.first_name
             update.effective_message.reply_sticker(
                 ROSEBOT_STICKER,
-                PM_START_TEXT,
+                caption=PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
