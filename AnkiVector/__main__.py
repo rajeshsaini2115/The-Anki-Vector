@@ -88,9 +88,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Free internet ", url="http://t.me/szrosebot?start=help"),
+        InlineKeyboardButton(text="Free internet ", switch_inline_query_current_chat="""),
         InlineKeyboardButton(
-            text="Film ", url="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"
+            text="Film ", switch_inline_query_current_chat="""
         ),
     ],
     [
