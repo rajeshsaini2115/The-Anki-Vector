@@ -226,7 +226,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_user.first_name
             update.effective_message.reply_sticker(
                 ROSEBOT_STICKER,
-            update.effective_message.reply_text(
+                await message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
