@@ -92,7 +92,7 @@ buttons = [
     ],
 ]
 
-ANKIVECTOR_IMG= "https://telegra.ph/file/14e7d126eb01b0e49dc93.jpg"
+ROSEBOT_STICKER = "CAACAgUAAxkBAALLL2EUjvv53FTlrJ2NeS2FHL_sfvPMAAIRAwACHUmhVNYuprqSm_zGIAQ"
 
 HELP_STRINGS = f"""
 *Rose Help Menu :* [🤖](https://telegra.ph/file/14e7d126eb01b0e49dc93.jpg)
@@ -224,9 +224,9 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_user.first_name
-            update.effective_message.reply_photo(
-                ANKIVECTOR_IMG,
-                caption=PM_START_TEXT,
+            update.effective_message.reply_sticker(
+                ROSEBOT_STICKER,
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
