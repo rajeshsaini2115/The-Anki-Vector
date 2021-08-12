@@ -224,7 +224,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_user.first_name
-            update.effective_message.reply_sticker(ROSEBOT_STICKER,
+            update.effective_message.reply_sticker(
+                ROSEBOT_STICKER,
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
