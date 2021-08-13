@@ -100,7 +100,7 @@ buttons = [
 ROSEBOT_STICKER = "CAACAgUAAxkBAALLL2EUjvv53FTlrJ2NeS2FHL_sfvPMAAIRAwACHUmhVNYuprqSm_zGIAQ"
 
 HELP_STRINGS = f"""
-*Rose Help Menu* [🤖](https://telegra.ph/file/14e7d126eb01b0e49dc93.jpg)
+*Rose Help Menu*[🤖](https://telegra.ph/file/14e7d126eb01b0e49dc93.jpg)
 I'm Rose bot 🇱🇰
 The following functions will helpful to you to manage your group🙂
 """.format(
@@ -174,11 +174,7 @@ def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     dispatcher.bot.send_message(
-        chat_id=chat_id,
-        text=text,
-        parse_mode=ParseMode.MARKDOWN,
-        disable_web_page_preview=True,
-        reply_markup=keyboard,
+        chat_id=chat_id, text=text, parse_mode=ParseMode.MARKDOWN, reply_markup=keyboard
     )
 
 
